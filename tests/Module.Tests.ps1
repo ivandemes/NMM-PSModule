@@ -1,17 +1,17 @@
 $script:RepositoryRoot = Split-Path $PSScriptRoot -Parent
-$script:ManifestPath = Join-Path $RepositoryRoot 'NMM-PoShModule/NMM-PoShModule.psd1'
+$script:ManifestPath = Join-Path $RepositoryRoot 'NMM-PSModule/NMM-PSModule.psd1'
 Import-Module $ManifestPath -Force
 $script:Specification = Get-Content (Join-Path $RepositoryRoot 'swagger.json') -Raw | ConvertFrom-Json
-$script:Operations = Get-Content (Join-Path $RepositoryRoot 'NMM-PoShModule/operations.json') -Raw | ConvertFrom-Json
+$script:Operations = Get-Content (Join-Path $RepositoryRoot 'NMM-PSModule/operations.json') -Raw | ConvertFrom-Json
 
-Describe 'NMM-PoShModule contract' {
+Describe 'NMM-PSModule contract' {
     It 'exports one command for every OpenAPI operation plus connection commands' {
         $expected = 0
         foreach ($path in $Specification.paths.PSObject.Properties) {
             $expected += @($path.Value.PSObject.Properties | Where-Object Name -In get, post, put, patch, delete).Count
         }
         $Operations.Count | Should Be $expected
-        @(Get-Command -Module NMM-PoShModule).Count | Should Be ($expected + 2)
+        @(Get-Command -Module NMM-PSModule).Count | Should Be ($expected + 2)
     }
 
     It 'maps every HTTP method to the requested PowerShell verb' {
@@ -28,7 +28,7 @@ Describe 'NMM-PoShModule contract' {
     }
 
     It 'adds Filter to the 75 GET operations with explicit array responses' {
-        $filterCommands = @(Get-Command -Module NMM-PoShModule -Verb Get | Where-Object { $_.Parameters.ContainsKey('Filter') })
+        $filterCommands = @(Get-Command -Module NMM-PSModule -Verb Get | Where-Object { $_.Parameters.ContainsKey('Filter') })
         $filterCommands.Count | Should Be 75
         (Get-Command Get-NMMAccounts).Parameters.ContainsKey('Filter') | Should Be $true
         (Get-Command Get-NMMTest).Parameters.ContainsKey('Filter') | Should Be $false
@@ -42,7 +42,7 @@ Describe 'GET collection filtering' {
             [pscustomobject]@{ name = 'Development One' }
             [pscustomobject]@{ name = 'Production Two' }
         )
-    } -ModuleName NMM-PoShModule
+    } -ModuleName NMM-PSModule
 
     It 'applies Filter to items returned by the API' {
         $connection = [pscustomobject]@{ BaseUri = 'https://example.test'; AccessToken = 'test-token' }
@@ -65,7 +65,7 @@ Describe 'Path parameter pipeline binding' {
             return @([pscustomobject]@{ id = 42; name = 'Contoso Demo Erwin' })
         }
         return @([pscustomobject]@{ name = 'Secret variable' })
-    } -ModuleName NMM-PoShModule
+    } -ModuleName NMM-PSModule
 
     It 'binds an account object Id to the account-scoped AccountId parameter' {
         $connection = [pscustomobject]@{ BaseUri = 'https://example.test'; AccessToken = 'test-token' }
@@ -73,14 +73,14 @@ Describe 'Path parameter pipeline binding' {
             Get-NMMAccountsByAccountIdSecureVariables -Connection $connection)
 
         $result.Count | Should Be 1
-        Assert-MockCalled Invoke-RestMethod -ModuleName NMM-PoShModule -ParameterFilter {
+        Assert-MockCalled Invoke-RestMethod -ModuleName NMM-PSModule -ParameterFilter {
             $Uri.AbsolutePath -eq '/rest-api/v1/accounts/42/secure-variables'
         }
     }
 }
 
 Describe 'Connect-NMMApi client credentials' {
-    Mock Invoke-RestMethod { [pscustomobject]@{ access_token = 'test-token' } } -ModuleName NMM-PoShModule
+    Mock Invoke-RestMethod { [pscustomobject]@{ access_token = 'test-token' } } -ModuleName NMM-PSModule
 
     It 'accepts a plain string client secret' {
         $connection = Connect-NMMApi -BaseUri 'https://example.test' -ClientId 'client-id' -ClientSecret 'plain-secret' -Scope 'api/.default' -NoDefault
@@ -95,14 +95,14 @@ Describe 'Connect-NMMApi client credentials' {
 
     It 'uses the Microsoft Entra token endpoint when TenantId is supplied' {
         $null = Connect-NMMApi -BaseUri 'https://example.test' -TenantId 'tenant-id' -ClientId 'client-id' -ClientSecret 'plain-secret' -Scope 'api://resource/.default' -NoDefault
-        Assert-MockCalled Invoke-RestMethod -ModuleName NMM-PoShModule -ParameterFilter {
+        Assert-MockCalled Invoke-RestMethod -ModuleName NMM-PSModule -ParameterFilter {
             $Uri.AbsoluteUri -eq 'https://login.microsoftonline.com/tenant-id/oauth2/v2.0/token'
         }
     }
 }
 
 Describe 'Connect-NMMApi authentication failures' {
-    Mock Invoke-RestMethod { throw 'Unauthorized' } -ModuleName NMM-PoShModule
+    Mock Invoke-RestMethod { throw 'Unauthorized' } -ModuleName NMM-PSModule
 
     It 'throws one useful error and does not return a connection' {
         $caught = $null

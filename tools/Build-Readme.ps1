@@ -2,8 +2,8 @@
 param()
 
 $repositoryRoot = Split-Path $PSScriptRoot -Parent
-$manifestPath = Join-Path $repositoryRoot 'NMM-PoShModule/NMM-PoShModule.psd1'
-$operationsPath = Join-Path $repositoryRoot 'NMM-PoShModule/operations.json'
+$manifestPath = Join-Path $repositoryRoot 'NMM-PSModule/NMM-PSModule.psd1'
+$operationsPath = Join-Path $repositoryRoot 'NMM-PSModule/operations.json'
 $readmePath = Join-Path $repositoryRoot 'README.md'
 
 Import-Module $manifestPath -Force
@@ -97,16 +97,16 @@ function Get-ParameterSummary {
     return (@($names) -join ', ') + '.'
 }
 
-$commands = @(Get-Command -Module NMM-PoShModule -CommandType Function | Sort-Object Name)
+$commands = @(Get-Command -Module NMM-PSModule -CommandType Function | Sort-Object Name)
 $lines = [System.Collections.Generic.List[string]]::new()
-$lines.Add('# NMM-PoShModule')
+$lines.Add('# NMM-PSModule')
 $lines.Add('')
 $lines.Add('PowerShell 7 module for the Nerdio Manager for MSP (NMM) REST API. The API commands and this reference are generated from `swagger.json`, keeping the module traceable to the API contract.')
 $lines.Add('')
 $lines.Add('## Installation')
 $lines.Add('')
 $lines.Add('```powershell')
-$lines.Add('Import-Module ./NMM-PoShModule/NMM-PoShModule.psd1')
+$lines.Add('Import-Module ./NMM-PSModule/NMM-PSModule.psd1')
 $lines.Add('```')
 $lines.Add('')
 $lines.Add('## Authentication')

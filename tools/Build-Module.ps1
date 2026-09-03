@@ -4,7 +4,7 @@ param(
     [string] $SpecificationPath = (Join-Path $PSScriptRoot '..\swagger.json'),
 
     [Parameter()]
-    [string] $ModuleRoot = (Join-Path $PSScriptRoot '..\NMM-PoShModule')
+    [string] $ModuleRoot = (Join-Path $PSScriptRoot '..\NMM-PSModule')
 )
 
 Set-StrictMode -Version Latest

@@ -1,11 +1,11 @@
-# NMM-PoShModule
+# NMM-PSModule
 
 PowerShell 7 module for the Nerdio Manager for MSP (NMM) REST API. The API commands and this reference are generated from `swagger.json`, keeping the module traceable to the API contract.
 
 ## Installation
 
 ```powershell
-Import-Module ./NMM-PoShModule/NMM-PoShModule.psd1
+Import-Module ./NMM-PSModule.psd1
 ```
 
 ## Authentication

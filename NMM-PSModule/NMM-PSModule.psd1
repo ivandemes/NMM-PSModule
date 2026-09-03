@@ -1,10 +1,10 @@
 @{
-    RootModule = 'NMM-PoShModule.psm1'
+    RootModule = 'NMM-PSModule.psm1'
     ModuleVersion = '1.0.0'
     GUID = '5105823c-41ab-46f9-a41b-1b2fd1b86d78'
-    Author = 'NMM-PoShModule contributors'
+    Author = 'NMM-PSModule contributors'
     CompanyName = 'Community'
-    Copyright = '(c) NMM-PoShModule contributors. All rights reserved.'
+    Copyright = '(c) NMM-PSModule contributors. All rights reserved.'
     Description = 'PowerShell client module generated from the NMM OpenAPI specification.'
     PowerShellVersion = '7.2'
     CompatiblePSEditions = @('Core')
@@ -20,4 +20,3 @@
         }
     }
 }
-
