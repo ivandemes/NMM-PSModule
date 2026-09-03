@@ -1,0 +1,1747 @@
+[
+  {
+    "Command": "Get-NMMAccountprovisioningPsaAccountConfigurations",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accountprovisioning/psaAccountConfigurations"
+  },
+  {
+    "Command": "Get-NMMAccountprovisioningPsaAccountConfigurationsByPsaAccountConfigurationIdCustomers",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accountprovisioning/psaAccountConfigurations/{psaAccountConfigurationId}/customers"
+  },
+  {
+    "Command": "Get-NMMAccountprovisioningPsaAccountConfigurationsByPsaAccountConfigurationIdCustomersLoadingState",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accountprovisioning/psaAccountConfigurations/{psaAccountConfigurationId}/customers/loading-state"
+  },
+  {
+    "Command": "Get-NMMAccounts",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdAutoscaleProfiles",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/autoscale-profiles"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdAutoscaleProfilesByProfileId",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/autoscale-profiles/{profileId}"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdBackupProtectedItems",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/backup/protectedItems"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdBackupRecoveryPoints",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/backup/recoveryPoints"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdDesktopImage",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/desktop-image"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByName",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/desktop-image/{subscriptionId}/{resourceGroup}/{name}"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByNameChangeLog",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/desktop-image/{subscriptionId}/{resourceGroup}/{name}/change-log"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByNameScheduleConfigurations",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/desktop-image/{subscriptionId}/{resourceGroup}/{name}/schedule-configurations"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdDirectories",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/directories"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdEnvironmentVariables",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/environment-variables"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdFslogix",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/fslogix"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdGroupsByGroupId",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/groups/{groupId}"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdHostPool",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameActiveDirectory",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/active-directory"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameAssignedUsers",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/assigned-users"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameAutoscaleSettings",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/autoscale-settings"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameAvd",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/avd"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameFslogix",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/fslogix"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameHosts",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/hosts"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameHostsByHostNameScheduleConfigurations",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/hosts/{hostName}/schedule-configurations"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameRdpSettings",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/rdp-settings"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameScheduleConfigurations",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/schedule-configurations"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameSessions",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/sessions"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameSessionTimeouts",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/session-timeouts"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameTags",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/tags"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameVmDeployment",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/vm-deployment"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdInheritedVariables",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/inherited-variables"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdLocationVariables",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/location-variables"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdNetworks",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/networks"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdNetworksAll",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/networks/all"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdRecoveryVault",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/recovery-vault"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdRecoveryVaultAllvaults",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/recovery-vault/allvaults"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdRecoveryVaultPolicies",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/recovery-vault/policies"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdRecoveryVaultPolicy",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/recovery-vault/policy"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdRecoveryVaultRegionpolicyinfoByRegion",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/recovery-vault/regionpolicyinfo/{region}"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdRecoveryVaultRegionpolicyinfoBySubscriptionIdByRegion",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/recovery-vault/regionpolicyinfo/{subscriptionId}/{region}"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdReservations",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/reservations"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdReservationsByReservationId",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/reservations/{reservationId}"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdReservationsByReservationIdResources",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/reservations/{reservationId}/resources"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdReservedInstancesReservationDetails",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/reservedInstances/reservationDetails"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdReservedInstancesReservationDetailsByOrderId",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/reservedInstances/reservationDetails/{orderId}"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdReservedInstancesReservationRecommendations",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/reservedInstances/reservationRecommendations"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdResourceGroup",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/resource-group"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdSchedules",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/schedules"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdSchedulesByScheduleId",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/schedules/{scheduleId}"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdSchedulesByScheduleIdConfigurations",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/schedules/{scheduleId}/configurations"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdScriptedActions",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/scripted-actions"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdScriptedActionsByScriptedActionIdScheduleConfigurations",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/scripted-actions/{scriptedActionId}/schedule-configurations"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdSecureScoresRecommendedActions",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/secure-scores/recommended-actions"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdSecureScoresTotalByCategory",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/secure-scores/total-by-category"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdSecureVariables",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/secure-variables"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdStorageAzureFilesBySubscriptionIdByResourceGroupByStorageAccountNameByShareNameAutoScale",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/storage/azure-files/{subscriptionId}/{resourceGroup}/{storageAccountName}/{shareName}/auto-scale"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdUamAppGroup",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/appGroup"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdUamAppGroupById",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/appGroup/{id}"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdUamApps",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/apps"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdUamPolicy",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/policy"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdUamPolicyById",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/policy/{id}"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdUamPolicyByIdState",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/policy/{id}/state"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdUamRepo",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdUamRepoById",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/{id}"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdUamRepoByRepoIdAppsExtensions",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/{repoId}/apps/extensions"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdUamRepoPrivateByRepoId",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/{repoId}"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdUamRepoPrivateOrphan",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/orphan"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdUamRepoPrivateShellApps",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/shell/apps"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdUamRepoWingetByRepoIdAppsMetadata",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/winget/{repoId}/apps/metadata"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdUsages",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/usages"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdUsersByUserId",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/users/{userId}"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdUsersMfaStatusByUserId",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/users/mfaStatus/{userId}"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdWorkspace",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/workspace"
+  },
+  {
+    "Command": "Get-NMMAccountsByAccountIdWorkspaceBySubscriptionIdByResourceGroupByWorkspaceNameSessions",
+    "Method": "GET",
+    "Path": "/rest-api/v1/accounts/{accountId}/workspace/{subscriptionId}/{resourceGroup}/{workspaceName}/sessions"
+  },
+  {
+    "Command": "Get-NMMAppRoleAssignments",
+    "Method": "GET",
+    "Path": "/rest-api/v1/app-role-assignments"
+  },
+  {
+    "Command": "Get-NMMAppRoleAssignmentsRoles",
+    "Method": "GET",
+    "Path": "/rest-api/v1/app-role-assignments/roles"
+  },
+  {
+    "Command": "Get-NMMAutoscaleProfiles",
+    "Method": "GET",
+    "Path": "/rest-api/v1/autoscale-profiles"
+  },
+  {
+    "Command": "Get-NMMAutoscaleProfilesByProfileId",
+    "Method": "GET",
+    "Path": "/rest-api/v1/autoscale-profiles/{profileId}"
+  },
+  {
+    "Command": "Get-NMMCostestimatorById",
+    "Method": "GET",
+    "Path": "/rest-api/v1/costestimator/{id}"
+  },
+  {
+    "Command": "Get-NMMCostestimatorList",
+    "Method": "GET",
+    "Path": "/rest-api/v1/costestimator/list"
+  },
+  {
+    "Command": "Get-NMMDirectories",
+    "Method": "GET",
+    "Path": "/rest-api/v1/directories"
+  },
+  {
+    "Command": "Get-NMMEnvironmentVariables",
+    "Method": "GET",
+    "Path": "/rest-api/v1/environment-variables"
+  },
+  {
+    "Command": "Get-NMMHealthStatus",
+    "Method": "GET",
+    "Path": "/rest-api/v1/health-status"
+  },
+  {
+    "Command": "Get-NMMInheritedVariables",
+    "Method": "GET",
+    "Path": "/rest-api/v1/inherited-variables"
+  },
+  {
+    "Command": "Get-NMMInvoices",
+    "Method": "GET",
+    "Path": "/rest-api/v1/invoices"
+  },
+  {
+    "Command": "Get-NMMInvoicesById",
+    "Method": "GET",
+    "Path": "/rest-api/v1/invoices/{id}"
+  },
+  {
+    "Command": "Get-NMMJobByJobId",
+    "Method": "GET",
+    "Path": "/rest-api/v1/job/{jobId}"
+  },
+  {
+    "Command": "Get-NMMJobByJobIdTasks",
+    "Method": "GET",
+    "Path": "/rest-api/v1/job/{jobId}/tasks"
+  },
+  {
+    "Command": "Get-NMMLocationVariables",
+    "Method": "GET",
+    "Path": "/rest-api/v1/location-variables"
+  },
+  {
+    "Command": "Get-NMMResourceGroup",
+    "Method": "GET",
+    "Path": "/rest-api/v1/resource-group"
+  },
+  {
+    "Command": "Get-NMMSchedules",
+    "Method": "GET",
+    "Path": "/rest-api/v1/schedules"
+  },
+  {
+    "Command": "Get-NMMSchedulesByScheduleId",
+    "Method": "GET",
+    "Path": "/rest-api/v1/schedules/{scheduleId}"
+  },
+  {
+    "Command": "Get-NMMSchedulesByScheduleIdConfigurations",
+    "Method": "GET",
+    "Path": "/rest-api/v1/schedules/{scheduleId}/configurations"
+  },
+  {
+    "Command": "Get-NMMScriptedActions",
+    "Method": "GET",
+    "Path": "/rest-api/v1/scripted-actions"
+  },
+  {
+    "Command": "Get-NMMScriptedActionsByScriptedActionIdScheduleConfigurations",
+    "Method": "GET",
+    "Path": "/rest-api/v1/scripted-actions/{scriptedActionId}/schedule-configurations"
+  },
+  {
+    "Command": "Get-NMMSecureVariables",
+    "Method": "GET",
+    "Path": "/rest-api/v1/secure-variables"
+  },
+  {
+    "Command": "Get-NMMTest",
+    "Method": "GET",
+    "Path": "/rest-api/v1/test"
+  },
+  {
+    "Command": "Get-NMMTimezones",
+    "Method": "GET",
+    "Path": "/rest-api/v1/timezones"
+  },
+  {
+    "Command": "Get-NMMUamAppGroup",
+    "Method": "GET",
+    "Path": "/rest-api/v1/uam/appGroup"
+  },
+  {
+    "Command": "Get-NMMUamAppGroupById",
+    "Method": "GET",
+    "Path": "/rest-api/v1/uam/appGroup/{id}"
+  },
+  {
+    "Command": "Get-NMMUamAppsAssignments",
+    "Method": "GET",
+    "Path": "/rest-api/v1/uam/apps/assignments"
+  },
+  {
+    "Command": "Get-NMMUamAppsFavorite",
+    "Method": "GET",
+    "Path": "/rest-api/v1/uam/apps/favorite"
+  },
+  {
+    "Command": "Get-NMMUamAppslibraryShellapps",
+    "Method": "GET",
+    "Path": "/rest-api/v1/uam/appslibrary/shellapps"
+  },
+  {
+    "Command": "Get-NMMUamPolicy",
+    "Method": "GET",
+    "Path": "/rest-api/v1/uam/policy"
+  },
+  {
+    "Command": "Get-NMMUamPolicyById",
+    "Method": "GET",
+    "Path": "/rest-api/v1/uam/policy/{id}"
+  },
+  {
+    "Command": "Get-NMMUamPolicyByPolicyIdAccountByAccountIdDeploymentState",
+    "Method": "GET",
+    "Path": "/rest-api/v1/uam/policy/{policyId}/account/{accountId}/deploymentState"
+  },
+  {
+    "Command": "Get-NMMUamPolicyByPolicyIdDerived",
+    "Method": "GET",
+    "Path": "/rest-api/v1/uam/policy/{policyId}/derived"
+  },
+  {
+    "Command": "Get-NMMUamPolicyByPolicyIdDerivedByDerivedPolicyIdState",
+    "Method": "GET",
+    "Path": "/rest-api/v1/uam/policy/{policyId}/derived/{derivedPolicyId}/state"
+  },
+  {
+    "Command": "Get-NMMUamRepo",
+    "Method": "GET",
+    "Path": "/rest-api/v1/uam/repo"
+  },
+  {
+    "Command": "Get-NMMUamRepoById",
+    "Method": "GET",
+    "Path": "/rest-api/v1/uam/repo/{id}"
+  },
+  {
+    "Command": "Get-NMMUamRepoByRepoIdApps",
+    "Method": "GET",
+    "Path": "/rest-api/v1/uam/repo/{repoId}/apps"
+  },
+  {
+    "Command": "Get-NMMUamRepoByRepoIdAppsExtensions",
+    "Method": "GET",
+    "Path": "/rest-api/v1/uam/repo/{repoId}/apps/extensions"
+  },
+  {
+    "Command": "Get-NMMUamRepoByRepoIdAppsSearch",
+    "Method": "GET",
+    "Path": "/rest-api/v1/uam/repo/{repoId}/apps/search"
+  },
+  {
+    "Command": "Get-NMMUamRepoPrivateByRepoId",
+    "Method": "GET",
+    "Path": "/rest-api/v1/uam/repo/private/{repoId}"
+  },
+  {
+    "Command": "Get-NMMUamRepoPrivateOrphan",
+    "Method": "GET",
+    "Path": "/rest-api/v1/uam/repo/private/orphan"
+  },
+  {
+    "Command": "Get-NMMUamRepoPrivateShellApps",
+    "Method": "GET",
+    "Path": "/rest-api/v1/uam/repo/private/shell/apps"
+  },
+  {
+    "Command": "Get-NMMUamRepoWingetByRepoIdAppsMetadata",
+    "Method": "GET",
+    "Path": "/rest-api/v1/uam/repo/winget/{repoId}/apps/metadata"
+  },
+  {
+    "Command": "Get-NMMUsages",
+    "Method": "GET",
+    "Path": "/rest-api/v1/usages"
+  },
+  {
+    "Command": "Get-NMMVulnerabilities",
+    "Method": "GET",
+    "Path": "/rest-api/v1/vulnerabilities"
+  },
+  {
+    "Command": "Get-NMMVulnerabilitiesByIdDetails",
+    "Method": "GET",
+    "Path": "/rest-api/v1/vulnerabilities/{id}/details"
+  },
+  {
+    "Command": "New-NMMAccountprovisioningConfigureFileStorage",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accountprovisioning/configureFileStorage"
+  },
+  {
+    "Command": "New-NMMAccountprovisioningConfigurePsa",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accountprovisioning/configurePsa"
+  },
+  {
+    "Command": "New-NMMAccountprovisioningConnectToExistingAd",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accountprovisioning/connectToExistingAd"
+  },
+  {
+    "Command": "New-NMMAccountprovisioningCreateNewAzureAdds",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accountprovisioning/createNewAzureAdds"
+  },
+  {
+    "Command": "New-NMMAccountprovisioningLinkNetwork",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accountprovisioning/linkNetwork"
+  },
+  {
+    "Command": "New-NMMAccountprovisioningLinkTenant",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accountprovisioning/linkTenant"
+  },
+  {
+    "Command": "New-NMMAccountprovisioningPsaAccountConfigurationsByPsaAccountConfigurationIdCustomersRefresh",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accountprovisioning/psaAccountConfigurations/{psaAccountConfigurationId}/customers/refresh"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdAutoscaleProfiles",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/autoscale-profiles"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdAutoscaleProfilesByProfileIdAssignments",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/autoscale-profiles/{profileId}/assignments"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdBackup",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/backup"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdBackupDeleteBackupData",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/backup/deleteBackupData"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdBackupDisable",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/backup/disable"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdBackupEnable",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/backup/enable"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdBackupRestore",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/backup/restore"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdBackupValidate",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/backup/validate"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByNameClone",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/desktop-image/{subscriptionId}/{resourceGroup}/{name}/clone"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByNameOpenRdp",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/desktop-image/{subscriptionId}/{resourceGroup}/{name}/open-rdp"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdDesktopImageCreateFromLibrary",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/desktop-image/create-from-library"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdDesktopImageCreateFromVm",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/desktop-image/create-from-vm"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdGroups",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/groups"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdGroupsAdd",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/groups/add"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPool",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameAllowsessions",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/allowsessions"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameAssign",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/assign"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameClone",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/clone"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameHosts",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/hosts"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameHostsByHostNameAllowsessions",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/hosts/{hostName}/allowsessions"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameHostsByHostNameAssignUser",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/hosts/{hostName}/assignUser"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameHostsByHostNameMessage",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/hosts/{hostName}/message"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameHostsByHostNameReimage",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/hosts/{hostName}/reimage"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameHostsByHostNameRestart",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/hosts/{hostName}/restart"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameHostsByHostNameSessionBySessionIdActionDisconnect",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/hosts/{hostName}/session/{sessionId}/action/disconnect"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameHostsByHostNameSessionBySessionIdActionLogoff",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/hosts/{hostName}/session/{sessionId}/action/logoff"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameHostsByHostNameSessionBySessionIdActionSendMessage",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/hosts/{hostName}/session/{sessionId}/action/send-message"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameHostsByHostNameStart",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/hosts/{hostName}/start"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameHostsByHostNameStop",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/hosts/{hostName}/stop"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameReimage",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/reimage"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameRestartBulk",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/restart-bulk"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameRunScriptBulk",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/run-script-bulk"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameStartBulk",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/start-bulk"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameStopBulk",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/stop-bulk"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameUnassign",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/unassign"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdHostPoolGenerateDescription",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/generateDescription"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdNetworksLink",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/networks/link"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdRecoveryVault",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/recovery-vault"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdRecoveryVaultAssignpoliciestoresources",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/recovery-vault/assignpoliciestoresources"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdRecoveryVaultCreateorupdatePolicy",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/recovery-vault/createorupdate/policy"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdRecoveryVaultLinkVault",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/recovery-vault/link/vault"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdRecoveryVaultUnlinkVault",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/recovery-vault/unlink/vault"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdReservations",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/reservations"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdReservedInstancesCalculate",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/reservedInstances/calculate"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdReservedInstancesPurchase",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/reservedInstances/purchase"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdResourceGroupLinked",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/resource-group/linked"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdSchedules",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/schedules"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdScriptedActions",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/scripted-actions"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdScriptedActionsByIdExecution",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/scripted-actions/{id}/execution"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdSecureScoresRecommendationsByIdStatus",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/secure-scores/recommendations/{id}/status"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdSecureVariables",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/secure-variables"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdStorageAzureFilesBySubscriptionIdByResourceGroupByStorageAccountNameByShareNameAutoScaleEnabledByIsEnabled",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/storage/azure-files/{subscriptionId}/{resourceGroup}/{storageAccountName}/{shareName}/auto-scale/enabled/{isEnabled}"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdUamAppGroup",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/appGroup"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdUamPolicy",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/policy"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdUamPolicyGenerateDescription",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/policy/generateDescription"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdUamRepoByRepoIdAppsFavorite",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/{repoId}/apps/favorite"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdUamRepoPrivateShell",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/shell"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdUamRepoPrivateShellApps",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/shell/apps"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdUamRepoPrivateShellLinkstorage",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/shell/linkstorage"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdUamRepoPrivateWinget",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/winget"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdUamRepoPrivateWingetByRepoIdApps",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/winget/{repoId}/apps"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdUamRepoPrivateWingetByRepoIdAppsByPackageIdVersion",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/winget/{repoId}/apps/{packageId}/version"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdUamRepoPrivateWingetByRepoIdAppsByPackageIdVersionByAppVersionInstaller",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/winget/{repoId}/apps/{packageId}/version/{appVersion}/installer"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdUamRepoPrivateWingetByRepoIdAppsImport",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/winget/{repoId}/apps/import"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdUamRepoPrivateWingetLink",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/winget/link"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdUamRepositoryPrivateByRepoIdPackageByPackageIdAutoImport",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repository/private/{repoId}/package/{packageId}/auto-import"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdUamRepositoryPrivateByRepoIdPackageByPackageIdDetection",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repository/private/{repoId}/package/{packageId}/detection"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdUsers",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/users"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdUsersAdd",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/users/add"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdUsersInvite",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/users/invite"
+  },
+  {
+    "Command": "New-NMMAccountsByAccountIdWorkspace",
+    "Method": "POST",
+    "Path": "/rest-api/v1/accounts/{accountId}/workspace"
+  },
+  {
+    "Command": "New-NMMAppRoleAssignments",
+    "Method": "POST",
+    "Path": "/rest-api/v1/app-role-assignments"
+  },
+  {
+    "Command": "New-NMMAutoscaleProfiles",
+    "Method": "POST",
+    "Path": "/rest-api/v1/autoscale-profiles"
+  },
+  {
+    "Command": "New-NMMAutoscaleProfilesByProfileIdAssignments",
+    "Method": "POST",
+    "Path": "/rest-api/v1/autoscale-profiles/{profileId}/assignments"
+  },
+  {
+    "Command": "New-NMMInheritedVariables",
+    "Method": "POST",
+    "Path": "/rest-api/v1/inherited-variables"
+  },
+  {
+    "Command": "New-NMMJobRestartByJobId",
+    "Method": "POST",
+    "Path": "/rest-api/v1/job/restart/{jobId}"
+  },
+  {
+    "Command": "New-NMMLocationVariables",
+    "Method": "POST",
+    "Path": "/rest-api/v1/location-variables"
+  },
+  {
+    "Command": "New-NMMResourceGroupLinked",
+    "Method": "POST",
+    "Path": "/rest-api/v1/resource-group/linked"
+  },
+  {
+    "Command": "New-NMMSchedules",
+    "Method": "POST",
+    "Path": "/rest-api/v1/schedules"
+  },
+  {
+    "Command": "New-NMMScriptedActions",
+    "Method": "POST",
+    "Path": "/rest-api/v1/scripted-actions"
+  },
+  {
+    "Command": "New-NMMScriptedActionsByIdExecution",
+    "Method": "POST",
+    "Path": "/rest-api/v1/scripted-actions/{id}/execution"
+  },
+  {
+    "Command": "New-NMMSecureVariables",
+    "Method": "POST",
+    "Path": "/rest-api/v1/secure-variables"
+  },
+  {
+    "Command": "New-NMMUamAppGroup",
+    "Method": "POST",
+    "Path": "/rest-api/v1/uam/appGroup"
+  },
+  {
+    "Command": "New-NMMUamPolicy",
+    "Method": "POST",
+    "Path": "/rest-api/v1/uam/policy"
+  },
+  {
+    "Command": "New-NMMUamRepoByRepoIdAppsFavorite",
+    "Method": "POST",
+    "Path": "/rest-api/v1/uam/repo/{repoId}/apps/favorite"
+  },
+  {
+    "Command": "New-NMMUamRepoLink",
+    "Method": "POST",
+    "Path": "/rest-api/v1/uam/repo/link"
+  },
+  {
+    "Command": "New-NMMUamRepoPrivateAndroidApps",
+    "Method": "POST",
+    "Path": "/rest-api/v1/uam/repo/private/android/apps"
+  },
+  {
+    "Command": "New-NMMUamRepoPrivateShell",
+    "Method": "POST",
+    "Path": "/rest-api/v1/uam/repo/private/shell"
+  },
+  {
+    "Command": "New-NMMUamRepoPrivateShellApps",
+    "Method": "POST",
+    "Path": "/rest-api/v1/uam/repo/private/shell/apps"
+  },
+  {
+    "Command": "New-NMMUamRepoPrivateShellLinkstorage",
+    "Method": "POST",
+    "Path": "/rest-api/v1/uam/repo/private/shell/linkstorage"
+  },
+  {
+    "Command": "New-NMMUamRepoPrivateWinget",
+    "Method": "POST",
+    "Path": "/rest-api/v1/uam/repo/private/winget"
+  },
+  {
+    "Command": "New-NMMUamRepoPrivateWingetByRepoIdApps",
+    "Method": "POST",
+    "Path": "/rest-api/v1/uam/repo/private/winget/{repoId}/apps"
+  },
+  {
+    "Command": "New-NMMUamRepoPrivateWingetByRepoIdAppsByPackageIdVersion",
+    "Method": "POST",
+    "Path": "/rest-api/v1/uam/repo/private/winget/{repoId}/apps/{packageId}/version"
+  },
+  {
+    "Command": "New-NMMUamRepoPrivateWingetByRepoIdAppsByPackageIdVersionByAppVersionInstaller",
+    "Method": "POST",
+    "Path": "/rest-api/v1/uam/repo/private/winget/{repoId}/apps/{packageId}/version/{appVersion}/installer"
+  },
+  {
+    "Command": "New-NMMUamRepoPrivateWingetByRepoIdAppsImport",
+    "Method": "POST",
+    "Path": "/rest-api/v1/uam/repo/private/winget/{repoId}/apps/import"
+  },
+  {
+    "Command": "New-NMMUamRepoPrivateWingetLink",
+    "Method": "POST",
+    "Path": "/rest-api/v1/uam/repo/private/winget/link"
+  },
+  {
+    "Command": "New-NMMUamRepositoryPrivateByRepoIdPackageByPackageIdAutoImport",
+    "Method": "POST",
+    "Path": "/rest-api/v1/uam/repository/private/{repoId}/package/{packageId}/auto-import"
+  },
+  {
+    "Command": "New-NMMUamRepositoryPrivateByRepoIdPackageByPackageIdDetection",
+    "Method": "POST",
+    "Path": "/rest-api/v1/uam/repository/private/{repoId}/package/{packageId}/detection"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdAutoscaleProfilesByProfileId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/autoscale-profiles/{profileId}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdAutoscaleProfilesByProfileIdAssignments",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/autoscale-profiles/{profileId}/assignments"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByName",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/desktop-image/{subscriptionId}/{resourceGroup}/{name}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByNamePowerOffAndSetAsImageConfiguration",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/desktop-image/{subscriptionId}/{resourceGroup}/{name}/power-off-and-set-as-image-configuration"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByNameScheduleConfigurationByConfigurationId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/desktop-image/{subscriptionId}/{resourceGroup}/{name}/schedule-configuration/{configurationId}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdGroupsByGroupId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/groups/{groupId}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolName",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameAutoScalePause",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/auto-scale-pause"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameDeleteBulk",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/delete-bulk"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameHostsByHostName",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/hosts/{hostName}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameHostsByHostNameScheduleConfigurationByConfigurationId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/hosts/{hostName}/schedule-configuration/{configurationId}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameScheduleConfigurationByConfigurationId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/schedule-configuration/{configurationId}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdInheritedVariables",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/inherited-variables"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdLocationVariables",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/location-variables"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdRecoveryVaultPolicy",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/recovery-vault/policy"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdReservationsByReservationId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/reservations/{reservationId}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdResourceGroupLinked",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/resource-group/linked"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdSchedulesByScheduleId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/schedules/{scheduleId}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdScriptedActionsById",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/scripted-actions/{id}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdScriptedActionsByScriptedActionIdScheduleConfigurationByConfigurationId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/scripted-actions/{scriptedActionId}/schedule-configuration/{configurationId}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdSecureVariables",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/secure-variables"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdUamAppGroupById",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/appGroup/{id}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdUamPolicyById",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/policy/{id}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdUamRepoByRepoId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/{repoId}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdUamRepoByRepoIdAppsFavorite",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/{repoId}/apps/favorite"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdUamRepoPrivateByRepoIdAppsByExternalId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/{repoId}/apps/{externalId}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdUamRepoPrivateShellAppsByAppId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/shell/apps/{appId}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdUamRepoPrivateShellByRepoId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/shell/{repoId}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdUamRepoPrivateShellByRepoIdUnlinkstorage",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/shell/{repoId}/unlinkstorage"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdUamRepoPrivateWingetByRepoId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/winget/{repoId}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdUamRepoPrivateWingetByRepoIdAppsByPackageIdVersionByAppVersion",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/winget/{repoId}/apps/{packageId}/version/{appVersion}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdUamRepoPrivateWingetByRepoIdAppsByPackageIdVersionByAppVersionInstallerByInstallerId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/winget/{repoId}/apps/{packageId}/version/{appVersion}/installer/{installerId}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdUsersByUserId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/users/{userId}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdUsersMfaRegistrationByUserId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/users/mfaRegistration/{userId}"
+  },
+  {
+    "Command": "Remove-NMMAccountsByAccountIdUsersSignInSessionsByUserId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/accounts/{accountId}/users/signInSessions/{userId}"
+  },
+  {
+    "Command": "Remove-NMMAppRoleAssignments",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/app-role-assignments"
+  },
+  {
+    "Command": "Remove-NMMAutoscaleProfilesByProfileId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/autoscale-profiles/{profileId}"
+  },
+  {
+    "Command": "Remove-NMMAutoscaleProfilesByProfileIdAssignments",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/autoscale-profiles/{profileId}/assignments"
+  },
+  {
+    "Command": "Remove-NMMInheritedVariables",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/inherited-variables"
+  },
+  {
+    "Command": "Remove-NMMLocationVariables",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/location-variables"
+  },
+  {
+    "Command": "Remove-NMMResourceGroupLinked",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/resource-group/linked"
+  },
+  {
+    "Command": "Remove-NMMSchedulesByScheduleId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/schedules/{scheduleId}"
+  },
+  {
+    "Command": "Remove-NMMScriptedActionsById",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/scripted-actions/{id}"
+  },
+  {
+    "Command": "Remove-NMMScriptedActionsByScriptedActionIdScheduleConfigurationByConfigurationId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/scripted-actions/{scriptedActionId}/schedule-configuration/{configurationId}"
+  },
+  {
+    "Command": "Remove-NMMSecureVariables",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/secure-variables"
+  },
+  {
+    "Command": "Remove-NMMUamAppGroupById",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/uam/appGroup/{id}"
+  },
+  {
+    "Command": "Remove-NMMUamPolicyById",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/uam/policy/{id}"
+  },
+  {
+    "Command": "Remove-NMMUamRepoByRepoId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/uam/repo/{repoId}"
+  },
+  {
+    "Command": "Remove-NMMUamRepoByRepoIdAppsFavorite",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/uam/repo/{repoId}/apps/favorite"
+  },
+  {
+    "Command": "Remove-NMMUamRepoPrivateByRepoIdAppsByExternalId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/uam/repo/private/{repoId}/apps/{externalId}"
+  },
+  {
+    "Command": "Remove-NMMUamRepoPrivateShellAppsByAppId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/uam/repo/private/shell/apps/{appId}"
+  },
+  {
+    "Command": "Remove-NMMUamRepoPrivateShellByRepoId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/uam/repo/private/shell/{repoId}"
+  },
+  {
+    "Command": "Remove-NMMUamRepoPrivateShellByRepoIdUnlinkstorage",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/uam/repo/private/shell/{repoId}/unlinkstorage"
+  },
+  {
+    "Command": "Remove-NMMUamRepoPrivateWingetByRepoId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/uam/repo/private/winget/{repoId}"
+  },
+  {
+    "Command": "Remove-NMMUamRepoPrivateWingetByRepoIdAppsByPackageIdVersionByAppVersion",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/uam/repo/private/winget/{repoId}/apps/{packageId}/version/{appVersion}"
+  },
+  {
+    "Command": "Remove-NMMUamRepoPrivateWingetByRepoIdAppsByPackageIdVersionByAppVersionInstallerByInstallerId",
+    "Method": "DELETE",
+    "Path": "/rest-api/v1/uam/repo/private/winget/{repoId}/apps/{packageId}/version/{appVersion}/installer/{installerId}"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdAutoscaleProfilesByProfileId",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/autoscale-profiles/{profileId}"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdAutoscaleProfilesByProfileIdAssignments",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/autoscale-profiles/{profileId}/assignments"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByNameRestart",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/desktop-image/{subscriptionId}/{resourceGroup}/{name}/restart"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByNameRunScript",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/desktop-image/{subscriptionId}/{resourceGroup}/{name}/run-script"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByNameScheduleRunScript",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/desktop-image/{subscriptionId}/{resourceGroup}/{name}/schedule/run-script"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByNameScheduleSetAsImage",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/desktop-image/{subscriptionId}/{resourceGroup}/{name}/schedule/set-as-image"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByNameScheduleStart",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/desktop-image/{subscriptionId}/{resourceGroup}/{name}/schedule/start"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByNameSetAsImage",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/desktop-image/{subscriptionId}/{resourceGroup}/{name}/set-as-image"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByNameStart",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/desktop-image/{subscriptionId}/{resourceGroup}/{name}/start"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByNameStop",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/desktop-image/{subscriptionId}/{resourceGroup}/{name}/stop"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByNameValidate",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/desktop-image/{subscriptionId}/{resourceGroup}/{name}/validate"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameActiveDirectory",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/active-directory"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameAutoScaleEnable",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/auto-scale-enable"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameAutoScalePause",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/auto-scale-pause"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameAutoscaleSettings",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/autoscale-settings"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameAvd",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/avd"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameCapacityExtenderProperties",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/capacity-extender-properties"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameDisconnect",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/disconnect"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameFslogix",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/fslogix"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameHostsByHostNameRunScript",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/hosts/{hostName}/run-script"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameLogoff",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/logoff"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameRdpSettings",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/rdp-settings"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameSendMessage",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/send-message"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameSessionTimeouts",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/session-timeouts"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameTags",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/tags"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameVmDeployment",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/host-pool/{subscriptionId}/{resourceGroup}/{poolName}/vm-deployment"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdInheritedVariables",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/inherited-variables"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdLocationVariables",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/location-variables"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdReservationsByReservationId",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/reservations/{reservationId}"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdResourceGroupSetDefault",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/resource-group/setDefault"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdSchedulesByScheduleId",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/schedules/{scheduleId}"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdScriptedActionsById",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/scripted-actions/{id}"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdSecureVariables",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/secure-variables"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdStorageAzureFilesBySubscriptionIdByResourceGroupByStorageAccountNameByShareNameAutoScale",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/storage/azure-files/{subscriptionId}/{resourceGroup}/{storageAccountName}/{shareName}/auto-scale"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdUamAppGroupById",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/appGroup/{id}"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdUamPolicyById",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/policy/{id}"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdUamPolicyByIdActivate",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/policy/{id}/activate"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdUamPolicyByIdDeactivate",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/policy/{id}/deactivate"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdUamPolicyByIdRun",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/policy/{id}/run"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdUamRepoByRepoId",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/{repoId}"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdUamRepoPrivateShellAppsByAppId",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/shell/apps/{appId}"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdUamRepoPrivateWingetByRepoIdAppsByPackageIdUpdate",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/winget/{repoId}/apps/{packageId}/update"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdUamRepoPrivateWingetByRepoIdAppsByPackageIdVersionByAppVersion",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/winget/{repoId}/apps/{packageId}/version/{appVersion}"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdUamRepoPrivateWingetByRepoIdAppsByPackageIdVersionByAppVersionInstallerByInstallerId",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/uam/repo/private/winget/{repoId}/apps/{packageId}/version/{appVersion}/installer/{installerId}"
+  },
+  {
+    "Command": "Set-NMMAccountsByAccountIdUsersPerUserMfaStateByUserId",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/accounts/{accountId}/users/perUserMfaState/{userId}"
+  },
+  {
+    "Command": "Set-NMMAppRoleAssignments",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/app-role-assignments"
+  },
+  {
+    "Command": "Set-NMMAutoscaleProfilesByProfileId",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/autoscale-profiles/{profileId}"
+  },
+  {
+    "Command": "Set-NMMAutoscaleProfilesByProfileIdAssignments",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/autoscale-profiles/{profileId}/assignments"
+  },
+  {
+    "Command": "Set-NMMInheritedVariables",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/inherited-variables"
+  },
+  {
+    "Command": "Set-NMMLocationVariables",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/location-variables"
+  },
+  {
+    "Command": "Set-NMMResourceGroupSetDefault",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/resource-group/setDefault"
+  },
+  {
+    "Command": "Set-NMMSchedulesByScheduleId",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/schedules/{scheduleId}"
+  },
+  {
+    "Command": "Set-NMMScriptedActionsById",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/scripted-actions/{id}"
+  },
+  {
+    "Command": "Set-NMMSecureVariables",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/secure-variables"
+  },
+  {
+    "Command": "Set-NMMUamAppGroupById",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/uam/appGroup/{id}"
+  },
+  {
+    "Command": "Set-NMMUamAppGroupByIdAssign",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/uam/appGroup/{id}/assign"
+  },
+  {
+    "Command": "Set-NMMUamPolicyById",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/uam/policy/{id}"
+  },
+  {
+    "Command": "Set-NMMUamPolicyByIdActivate",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/uam/policy/{id}/activate"
+  },
+  {
+    "Command": "Set-NMMUamPolicyByIdDeactivate",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/uam/policy/{id}/deactivate"
+  },
+  {
+    "Command": "Set-NMMUamPolicyByIdRun",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/uam/policy/{id}/run"
+  },
+  {
+    "Command": "Set-NMMUamRepoByRepoId",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/uam/repo/{repoId}"
+  },
+  {
+    "Command": "Set-NMMUamRepoByRepoIdAppsAssignments",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/uam/repo/{repoId}/apps/assignments"
+  },
+  {
+    "Command": "Set-NMMUamRepoPrivateShellAppsByAppId",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/uam/repo/private/shell/apps/{appId}"
+  },
+  {
+    "Command": "Set-NMMUamRepoPrivateWingetByRepoIdAppsByPackageIdUpdate",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/uam/repo/private/winget/{repoId}/apps/{packageId}/update"
+  },
+  {
+    "Command": "Set-NMMUamRepoPrivateWingetByRepoIdAppsByPackageIdVersionByAppVersion",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/uam/repo/private/winget/{repoId}/apps/{packageId}/version/{appVersion}"
+  },
+  {
+    "Command": "Set-NMMUamRepoPrivateWingetByRepoIdAppsByPackageIdVersionByAppVersionInstallerByInstallerId",
+    "Method": "PUT",
+    "Path": "/rest-api/v1/uam/repo/private/winget/{repoId}/apps/{packageId}/version/{appVersion}/installer/{installerId}"
+  },
+  {
+    "Command": "Update-NMMAccountsByAccountIdGroupsByGroupId",
+    "Method": "PATCH",
+    "Path": "/rest-api/v1/accounts/{accountId}/groups/{groupId}"
+  },
+  {
+    "Command": "Update-NMMAccountsByAccountIdUsersByUserId",
+    "Method": "PATCH",
+    "Path": "/rest-api/v1/accounts/{accountId}/users/{userId}"
+  }
+]

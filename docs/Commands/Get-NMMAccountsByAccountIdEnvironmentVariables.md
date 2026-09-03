@@ -1,0 +1,19 @@
+# Get-NMMAccountsByAccountIdEnvironmentVariables
+
+## Synopsis
+
+Get a list of account environment variables
+
+## Syntax
+
+~~~powershell
+Get-NMMAccountsByAccountIdEnvironmentVariables -AccountId <string> [-Connection <psobject>]
+~~~
+
+## Description
+
+No additional description is provided by the API specification.
+
+## API operation
+
+GET /rest-api/v1/accounts/{accountId}/environment-variables
