@@ -7,7 +7,7 @@ Get the list of existing FSLogix configs.
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdFslogix -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdFslogix -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

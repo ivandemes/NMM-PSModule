@@ -22,13 +22,13 @@ System.Management.Automation.PSObject
 #>
     [CmdletBinding(SupportsShouldProcess = $false)]
     param(
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory = $true, ValueFromPipelineByPropertyName = $true)]
         [string] $SubscriptionId,
 
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory = $true, ValueFromPipelineByPropertyName = $true)]
         [string] $Region,
 
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory = $true, ValueFromPipelineByPropertyName = $true)]
         [string] $AccountId,
 
         [Parameter()]

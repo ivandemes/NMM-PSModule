@@ -7,7 +7,7 @@ Get a list of account environment variables
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdEnvironmentVariables -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdEnvironmentVariables -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

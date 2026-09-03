@@ -7,7 +7,7 @@ Get the list of configured PSA (Professional Services Automation) systems
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountprovisioningPsaAccountConfigurations [-Connection <psobject>]
+Get-NMMAccountprovisioningPsaAccountConfigurations [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

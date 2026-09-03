@@ -7,7 +7,7 @@ Timezones ids
 ## Syntax
 
 ~~~powershell
-Get-NMMTimezones [-Connection <psobject>]
+Get-NMMTimezones [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

@@ -7,7 +7,7 @@ Get the list of global auto-scale profiles
 ## Syntax
 
 ~~~powershell
-Get-NMMAutoscaleProfiles [-Connection <psobject>]
+Get-NMMAutoscaleProfiles [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

@@ -7,7 +7,7 @@ Get the list of accounts
 ## Syntax
 
 ~~~powershell
-Get-NMMAccounts [-Connection <psobject>]
+Get-NMMAccounts [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

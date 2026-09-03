@@ -7,7 +7,7 @@ Get list of all app assignments.
 ## Syntax
 
 ~~~powershell
-Get-NMMUamAppsAssignments [-Connection <psobject>]
+Get-NMMUamAppsAssignments [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

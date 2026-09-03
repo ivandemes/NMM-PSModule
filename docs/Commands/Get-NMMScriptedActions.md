@@ -7,7 +7,7 @@ Get the list of msp scripted actions.
 ## Syntax
 
 ~~~powershell
-Get-NMMScriptedActions [-Connection <psobject>]
+Get-NMMScriptedActions [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

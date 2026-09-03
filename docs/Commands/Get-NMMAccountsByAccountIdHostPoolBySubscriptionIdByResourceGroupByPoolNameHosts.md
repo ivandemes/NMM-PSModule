@@ -7,7 +7,7 @@ Get all hosts of the host pool
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameHosts -SubscriptionId <string> -ResourceGroup <string> -PoolName <string> -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameHosts -SubscriptionId <string> -ResourceGroup <string> -PoolName <string> -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

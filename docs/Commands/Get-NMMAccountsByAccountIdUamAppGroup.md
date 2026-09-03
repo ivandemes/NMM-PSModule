@@ -7,7 +7,7 @@ Get app groups.
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdUamAppGroup -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdUamAppGroup -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

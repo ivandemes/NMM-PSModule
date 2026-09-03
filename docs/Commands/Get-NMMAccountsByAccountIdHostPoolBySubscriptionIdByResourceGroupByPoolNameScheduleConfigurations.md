@@ -7,7 +7,7 @@ Get host pool job schedule configurations.
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameScheduleConfigurations -SubscriptionId <string> -ResourceGroup <string> -PoolName <string> -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameScheduleConfigurations -SubscriptionId <string> -ResourceGroup <string> -PoolName <string> -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

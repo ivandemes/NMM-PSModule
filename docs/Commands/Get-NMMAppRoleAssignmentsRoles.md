@@ -7,7 +7,7 @@ Get the list of app roles.
 ## Syntax
 
 ~~~powershell
-Get-NMMAppRoleAssignmentsRoles [-Connection <psobject>]
+Get-NMMAppRoleAssignmentsRoles [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

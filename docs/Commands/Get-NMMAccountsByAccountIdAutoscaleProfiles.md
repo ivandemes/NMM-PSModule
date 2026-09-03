@@ -7,7 +7,7 @@ Get the list of account auto-scale profiles
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdAutoscaleProfiles -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdAutoscaleProfiles -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

@@ -7,7 +7,7 @@ Get all host pools in the account
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdHostPool -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdHostPool -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

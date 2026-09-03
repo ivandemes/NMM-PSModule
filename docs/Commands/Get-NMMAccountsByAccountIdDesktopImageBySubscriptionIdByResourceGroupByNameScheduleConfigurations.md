@@ -7,7 +7,7 @@ Get Desktop image job schedule configurations.
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByNameScheduleConfigurations -Name <string> -ResourceGroup <string> -SubscriptionId <string> -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByNameScheduleConfigurations -Name <string> -ResourceGroup <string> -SubscriptionId <string> -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

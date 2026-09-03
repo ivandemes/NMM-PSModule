@@ -7,7 +7,7 @@ List of users assigned to the pool
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameAssignedUsers -SubscriptionId <string> -ResourceGroup <string> -PoolName <string> [-IncludeGroupAssignments <boolean>] -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameAssignedUsers -SubscriptionId <string> -ResourceGroup <string> -PoolName <string> [-IncludeGroupAssignments <boolean>] -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

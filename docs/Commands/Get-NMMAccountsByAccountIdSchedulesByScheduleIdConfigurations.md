@@ -7,7 +7,7 @@ Get the list of related schedule configurations by account schedule profile id
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdSchedulesByScheduleIdConfigurations -ScheduleId <integer> -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdSchedulesByScheduleIdConfigurations -ScheduleId <integer> -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

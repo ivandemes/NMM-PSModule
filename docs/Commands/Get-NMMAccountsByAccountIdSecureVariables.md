@@ -7,7 +7,7 @@ Get a list of account secure variables
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdSecureVariables -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdSecureVariables -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

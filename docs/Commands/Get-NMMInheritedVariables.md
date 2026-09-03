@@ -7,7 +7,7 @@ Get a list of msp inherited variables
 ## Syntax
 
 ~~~powershell
-Get-NMMInheritedVariables [-Connection <psobject>]
+Get-NMMInheritedVariables [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

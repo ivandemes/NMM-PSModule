@@ -7,7 +7,7 @@ Get the list of saved estimates
 ## Syntax
 
 ~~~powershell
-Get-NMMCostestimatorList [-Connection <psobject>]
+Get-NMMCostestimatorList [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

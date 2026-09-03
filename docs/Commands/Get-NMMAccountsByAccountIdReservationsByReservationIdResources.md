@@ -7,7 +7,7 @@ Get resource names associated to reservation
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdReservationsByReservationIdResources -ReservationId <integer> -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdReservationsByReservationIdResources -ReservationId <integer> -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

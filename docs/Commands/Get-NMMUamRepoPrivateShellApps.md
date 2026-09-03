@@ -7,7 +7,7 @@ List MSP Shell apps.
 ## Syntax
 
 ~~~powershell
-Get-NMMUamRepoPrivateShellApps [-Connection <psobject>]
+Get-NMMUamRepoPrivateShellApps [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

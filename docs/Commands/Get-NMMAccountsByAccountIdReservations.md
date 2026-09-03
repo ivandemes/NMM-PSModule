@@ -7,7 +7,7 @@ Get all local reservations
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdReservations -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdReservations -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

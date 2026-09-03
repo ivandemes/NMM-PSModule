@@ -7,7 +7,7 @@ Get the list of related schedule configurations by global schedule profile id
 ## Syntax
 
 ~~~powershell
-Get-NMMSchedulesByScheduleIdConfigurations -ScheduleId <integer> [-Connection <psobject>]
+Get-NMMSchedulesByScheduleIdConfigurations -ScheduleId <integer> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

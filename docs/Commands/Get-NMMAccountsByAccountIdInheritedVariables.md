@@ -7,7 +7,7 @@ Get a list of account inherited variables
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdInheritedVariables -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdInheritedVariables -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

@@ -7,7 +7,7 @@ Get a list of msp location variables
 ## Syntax
 
 ~~~powershell
-Get-NMMLocationVariables [-Connection <psobject>]
+Get-NMMLocationVariables [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

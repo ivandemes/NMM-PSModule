@@ -7,7 +7,7 @@ Get Azure runbook account scripted action schedule configurations.
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdScriptedActionsByScriptedActionIdScheduleConfigurations -ScriptedActionId <integer> -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdScriptedActionsByScriptedActionIdScheduleConfigurations -ScriptedActionId <integer> -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

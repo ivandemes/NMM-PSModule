@@ -7,7 +7,7 @@ Get all policies in the vault
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdRecoveryVaultPolicies -VaultId <string> -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdRecoveryVaultPolicies -VaultId <string> -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

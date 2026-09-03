@@ -7,7 +7,7 @@ Get app groups.
 ## Syntax
 
 ~~~powershell
-Get-NMMUamAppGroup [-Connection <psobject>]
+Get-NMMUamAppGroup [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

@@ -7,7 +7,7 @@ Get all desktop images
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdDesktopImage -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdDesktopImage -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

@@ -7,7 +7,7 @@ List IDs of all apps stored in private repo.
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdUamRepoPrivateByRepoId -RepoId <integer> -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdUamRepoPrivateByRepoId -RepoId <integer> -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

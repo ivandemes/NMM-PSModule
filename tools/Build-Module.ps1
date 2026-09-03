@@ -71,6 +71,22 @@ function Get-CommandName {
     return "$verb-NMM$($nounParts -join '')"
 }
 
+function Test-IsCollectionOperation {
+    param([Parameter(Mandatory)] $Operation)
+
+    $responses = Get-PropertyValue $Operation 'responses'
+    if ($null -eq $responses) { return $false }
+    foreach ($response in $responses.PSObject.Properties | Where-Object Name -Match '^2\d\d$') {
+        $content = Get-PropertyValue $response.Value 'content'
+        if ($null -eq $content) { continue }
+        foreach ($mediaType in $content.PSObject.Properties) {
+            $schema = Get-PropertyValue $mediaType.Value 'schema'
+            if ((Get-PropertyValue $schema 'type') -eq 'array') { return $true }
+        }
+    }
+    return $false
+}
+
 $specification = Get-Content -LiteralPath $SpecificationPath -Raw | ConvertFrom-Json -Depth 100
 if ($specification.openapi -notlike '3.*') { throw "Only OpenAPI 3.x specifications are supported. Found '$($specification.openapi)'." }
 $commonParameterNames = @(
@@ -101,6 +117,7 @@ foreach ($pathProperty in $specification.paths.PSObject.Properties) {
         $usedNames[$commandName] = $true
 
         $parameters = @(Get-PropertyValue $operation 'parameters') | Where-Object { $null -ne $_ }
+        $pathParameters = @($parameters | Where-Object in -eq 'path')
         $parameterNames = @{}
         $parameterBlocks = foreach ($apiParameter in $parameters) {
             $name = ConvertTo-PascalCase $apiParameter.name
@@ -109,7 +126,11 @@ foreach ($pathProperty in $specification.paths.PSObject.Properties) {
             $parameterNames[$name] = $true
             $attributes = [System.Collections.Generic.List[string]]::new()
             $mandatory = [bool](Get-PropertyValue $apiParameter 'required')
-            $attributes.Add("        [Parameter(Mandatory = `$$($mandatory.ToString().ToLowerInvariant()))]")
+            $pipelineAttribute = if ($apiParameter.in -eq 'path') { ', ValueFromPipelineByPropertyName = $true' } else { '' }
+            $attributes.Add("        [Parameter(Mandatory = `$$($mandatory.ToString().ToLowerInvariant())$pipelineAttribute)]")
+            if ($apiParameter.in -eq 'path' -and $pathParameters.Count -eq 1 -and $apiParameter.name -ne 'id' -and $apiParameter.name -match 'Id$') {
+                $attributes.Add("        [Alias('Id')]")
+            }
             $enumValues = Get-PropertyValue $apiParameter.schema 'enum'
             if ($enumValues) {
                 $values = ($enumValues | ForEach-Object { "'$(($_.ToString()) -replace "'", "''")'" }) -join ', '
@@ -129,9 +150,13 @@ foreach ($pathProperty in $specification.paths.PSObject.Properties) {
 
         $requestBody = Get-PropertyValue $operation 'requestBody'
         $hasBody = $null -ne $requestBody
+        $hasFilter = $methodProperty.Name -eq 'get' -and (Test-IsCollectionOperation $operation)
         if ($hasBody) {
             $bodyMandatory = [bool](Get-PropertyValue $requestBody 'required')
             $parameterBlocks += "        [Parameter(Mandatory = `$$($bodyMandatory.ToString().ToLowerInvariant()), ValueFromPipeline = `$true)]`n        [AllowNull()]`n        [object] `$InputObject"
+        }
+        if ($hasFilter) {
+            $parameterBlocks += "        [Parameter()]`n        [ValidateScript({ `$_ -is [scriptblock] -or (`$_ -is [string] -and -not [string]::IsNullOrWhiteSpace(`$_)) })]`n        [object] `$Filter"
         }
         $parameterBlocks += "        [Parameter()]`n        [psobject] `$Connection"
 
@@ -142,6 +167,7 @@ foreach ($pathProperty in $specification.paths.PSObject.Properties) {
         }
         $helpParams = @($helpParams)
         if ($hasBody) { $helpParams += ".PARAMETER InputObject`nThe JSON request body. Objects and hashtables are serialized automatically." }
+        if ($hasFilter) { $helpParams += ".PARAMETER Filter`nA client-side filter applied to each item returned by the API. Accepts a script block such as { `$_.name -like 'Prod*' } or a string such as `"name -like 'Prod*'`". API-native query parameters should be preferred when available." }
         $helpParams += '.PARAMETER Connection' + "`nA connection returned by Connect-NMMApi. When omitted, the module's current connection is used."
 
         $pathAssignments = foreach ($apiParameter in $parameters | Where-Object in -eq 'path') {
@@ -158,6 +184,9 @@ foreach ($pathProperty in $specification.paths.PSObject.Properties) {
         $supportsShouldProcess = $methodProperty.Name -ne 'get'
         $confirmImpact = if ($methodProperty.Name -eq 'delete') { ", ConfirmImpact = 'High'" } else { '' }
         $invoke = "        Invoke-NMMApiRequest -Method '$($methodProperty.Name.ToUpperInvariant())' -Path '$($pathProperty.Name -replace "'", "''")' -PathValues `$pathValues -QueryValues `$queryValues$bodyArgument -Connection `$Connection"
+        if ($hasFilter) {
+            $invoke = "        `$response = $($invoke.Trim())`n        if (`$PSBoundParameters.ContainsKey('Filter')) {`n            `$filterScript = ConvertTo-NMMFilterScript -Filter `$Filter`n            `$response | Where-Object -FilterScript `$filterScript`n        }`n        else {`n            `$response`n        }"
+        }
         if ($supportsShouldProcess) {
             $invoke = "        if (`$PSCmdlet.ShouldProcess('$($pathProperty.Name -replace "'", "''")', '$($methodProperty.Name.ToUpperInvariant())')) {`n    $invoke`n        }"
         }
@@ -201,6 +230,7 @@ $invoke
         }
         $syntaxParts = @($syntaxParts)
         if ($hasBody) { $syntaxParts += if (Get-PropertyValue $requestBody 'required') { '-InputObject <object>' } else { '[-InputObject <object>]' } }
+        if ($hasFilter) { $syntaxParts += '[-Filter <object>]' }
         $syntaxParts += '[-Connection <psobject>]'
         $doc = @"
 # $commandName

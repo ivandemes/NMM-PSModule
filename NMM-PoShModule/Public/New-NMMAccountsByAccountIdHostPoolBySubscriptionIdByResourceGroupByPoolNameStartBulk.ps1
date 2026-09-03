@@ -45,16 +45,16 @@ System.Management.Automation.PSObject
 #>
     [CmdletBinding(SupportsShouldProcess = $true)]
     param(
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory = $true, ValueFromPipelineByPropertyName = $true)]
         [string] $SubscriptionId,
 
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory = $true, ValueFromPipelineByPropertyName = $true)]
         [string] $ResourceGroup,
 
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory = $true, ValueFromPipelineByPropertyName = $true)]
         [string] $PoolName,
 
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory = $true, ValueFromPipelineByPropertyName = $true)]
         [string] $AccountId,
 
         [Parameter(Mandatory = $false, ValueFromPipeline = $true)]

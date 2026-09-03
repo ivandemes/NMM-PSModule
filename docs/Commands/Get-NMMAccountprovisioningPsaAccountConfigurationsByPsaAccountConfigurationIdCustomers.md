@@ -7,7 +7,7 @@ Get the list of customers of a configured PSA system
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountprovisioningPsaAccountConfigurationsByPsaAccountConfigurationIdCustomers -PsaAccountConfigurationId <integer> [-SearchTerm <string>] [-Top <integer>] [-Connection <psobject>]
+Get-NMMAccountprovisioningPsaAccountConfigurationsByPsaAccountConfigurationIdCustomers -PsaAccountConfigurationId <integer> [-SearchTerm <string>] [-Top <integer>] [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

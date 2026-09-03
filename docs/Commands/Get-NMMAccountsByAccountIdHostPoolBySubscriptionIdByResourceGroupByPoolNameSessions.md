@@ -7,7 +7,7 @@ Get host pool user sessions
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameSessions -SubscriptionId <string> -ResourceGroup <string> -PoolName <string> -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameSessions -SubscriptionId <string> -ResourceGroup <string> -PoolName <string> -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

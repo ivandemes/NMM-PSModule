@@ -18,12 +18,20 @@ Connect with an existing bearer token:
 Connect-NMMApi -BaseUri 'https://example.getnerdio.com' -AccessToken $token
 ```
 
-Or use OAuth client credentials. Secrets are accepted as `SecureString` values:
+Or use OAuth client credentials. A `SecureString` is recommended for interactive use:
 
 ```powershell
 $secret = Read-Host 'Client secret' -AsSecureString
-Connect-NMMApi -BaseUri 'https://example.getnerdio.com' -ClientId $clientId -ClientSecret $secret
+Connect-NMMApi -BaseUri 'https://example.getnerdio.com' -TenantId $tenantId -ClientId $clientId -ClientSecret $secret -Scope $scope
 ```
+
+Plain strings are also accepted for CI systems and existing automation:
+
+```powershell
+Connect-NMMApi -BaseUri 'https://example.getnerdio.com' -TenantId $tenantId -ClientId $clientId -ClientSecret $env:NMM_CLIENT_SECRET -Scope 'api://api-application-id/.default'
+```
+
+Avoid placing a literal secret in scripts, shell history, or logs.
 
 Use `-NoDefault` to create a reusable connection without changing module state, then pass it with `-Connection`.
 
@@ -40,6 +48,27 @@ Every command has comment-based help. Markdown reference pages are under `docs/C
 
 Request bodies are supplied with `-InputObject` as a hashtable, object, or JSON string. Required path and query arguments are marked mandatory; optional query values are omitted unless explicitly bound. Destructive commands support `-WhatIf` and `-Confirm`.
 
+GET commands that return arrays expose a client-side `-Filter` script block:
+
+```powershell
+Get-NMMAccounts -Filter { $_.name -like 'Production*' }
+```
+
+String filter syntax is also supported for a single property expression:
+
+```powershell
+Get-NMMAccounts -Filter "name -eq 'Contoso Demo'"
+```
+
+The API response is downloaded before this filter runs. Prefer API-native parameters such as `-SearchTerm`, date ranges, or status selectors where available.
+
+Path parameters accept pipeline input by property name. A collection object with an `id` property can flow into an account-scoped command whose only path parameter is `AccountId`:
+
+```powershell
+Get-NMMAccounts -Filter "name -eq 'Contoso Demo'" |
+    Get-NMMAccountsByAccountIdSecureVariables
+```
+
 ## Regeneration
 
 After updating `swagger.json`, regenerate commands and documentation:
@@ -47,4 +76,3 @@ After updating `swagger.json`, regenerate commands and documentation:
 ```powershell
 ./tools/Build-Module.ps1 -Verbose
 ```
-

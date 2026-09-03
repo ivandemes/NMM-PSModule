@@ -7,7 +7,7 @@ Get the list of assigned principals.
 ## Syntax
 
 ~~~powershell
-Get-NMMAppRoleAssignments [-Connection <psobject>]
+Get-NMMAppRoleAssignments [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

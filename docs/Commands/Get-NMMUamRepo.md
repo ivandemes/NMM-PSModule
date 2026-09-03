@@ -7,7 +7,7 @@ Get list of linked MSP repositories
 ## Syntax
 
 ~~~powershell
-Get-NMMUamRepo [-Connection <psobject>]
+Get-NMMUamRepo [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

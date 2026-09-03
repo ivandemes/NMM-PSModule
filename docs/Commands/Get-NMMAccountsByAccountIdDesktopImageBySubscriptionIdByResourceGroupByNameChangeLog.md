@@ -7,7 +7,7 @@ List changes made to this image.
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByNameChangeLog -Name <string> -ResourceGroup <string> -SubscriptionId <string> -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdDesktopImageBySubscriptionIdByResourceGroupByNameChangeLog -Name <string> -ResourceGroup <string> -SubscriptionId <string> -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

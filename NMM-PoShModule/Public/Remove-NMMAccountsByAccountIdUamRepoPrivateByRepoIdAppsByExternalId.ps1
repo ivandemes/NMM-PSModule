@@ -21,13 +21,13 @@ System.Management.Automation.PSObject
 #>
     [CmdletBinding(SupportsShouldProcess = $true, ConfirmImpact = 'High')]
     param(
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory = $true, ValueFromPipelineByPropertyName = $true)]
         [int] $RepoId,
 
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory = $true, ValueFromPipelineByPropertyName = $true)]
         [string] $ExternalId,
 
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory = $true, ValueFromPipelineByPropertyName = $true)]
         [string] $AccountId,
 
         [Parameter()]

@@ -7,7 +7,7 @@ Search applications in the specific repository.
 ## Syntax
 
 ~~~powershell
-Get-NMMUamRepoByRepoIdAppsSearch -RepoId <integer> [-SearchTerm <string>] [-Connection <psobject>]
+Get-NMMUamRepoByRepoIdAppsSearch -RepoId <integer> [-SearchTerm <string>] [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

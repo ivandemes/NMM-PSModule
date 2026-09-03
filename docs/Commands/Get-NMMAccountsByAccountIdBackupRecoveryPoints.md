@@ -7,7 +7,7 @@ Recovery points of protected item
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdBackupRecoveryPoints -ProtectedItemId <string> -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdBackupRecoveryPoints -ProtectedItemId <string> -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

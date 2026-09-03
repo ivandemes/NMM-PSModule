@@ -7,7 +7,7 @@ Get managed (linked) vaults
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdRecoveryVault -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdRecoveryVault -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

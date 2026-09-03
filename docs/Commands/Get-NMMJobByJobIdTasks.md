@@ -7,7 +7,7 @@ Get all tasks of job by jobId
 ## Syntax
 
 ~~~powershell
-Get-NMMJobByJobIdTasks -JobId <integer> [-Connection <psobject>]
+Get-NMMJobByJobIdTasks -JobId <integer> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

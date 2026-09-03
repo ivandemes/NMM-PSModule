@@ -7,7 +7,7 @@ Get the list of account scripted actions.
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdScriptedActions -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdScriptedActions -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

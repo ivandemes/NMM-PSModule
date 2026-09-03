@@ -7,7 +7,7 @@ Get the list of account schedule profiles
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdSchedules -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdSchedules -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

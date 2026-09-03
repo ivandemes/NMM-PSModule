@@ -7,7 +7,7 @@ Get derived account-level policies from MSP policy.
 ## Syntax
 
 ~~~powershell
-Get-NMMUamPolicyByPolicyIdDerived -PolicyId <integer> [-Connection <psobject>]
+Get-NMMUamPolicyByPolicyIdDerived -PolicyId <integer> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

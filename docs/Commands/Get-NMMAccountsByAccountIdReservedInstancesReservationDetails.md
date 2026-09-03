@@ -7,7 +7,7 @@ Get all reservations from Azure
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdReservedInstancesReservationDetails -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdReservedInstancesReservationDetails -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

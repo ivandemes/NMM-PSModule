@@ -7,7 +7,7 @@ List Msp linkable private winget repositories
 ## Syntax
 
 ~~~powershell
-Get-NMMUamRepoPrivateOrphan [-Connection <psobject>]
+Get-NMMUamRepoPrivateOrphan [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

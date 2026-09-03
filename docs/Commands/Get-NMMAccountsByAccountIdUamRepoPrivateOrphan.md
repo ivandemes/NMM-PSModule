@@ -7,7 +7,7 @@ List linkable private winget repositories
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdUamRepoPrivateOrphan -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdUamRepoPrivateOrphan -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

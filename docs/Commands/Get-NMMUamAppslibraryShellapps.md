@@ -7,7 +7,7 @@ Get Shell apps from Nerdio library.
 ## Syntax
 
 ~~~powershell
-Get-NMMUamAppslibraryShellapps [-Connection <psobject>]
+Get-NMMUamAppslibraryShellapps [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

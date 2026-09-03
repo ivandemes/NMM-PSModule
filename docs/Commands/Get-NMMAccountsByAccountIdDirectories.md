@@ -7,7 +7,7 @@ Get the list of directories
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdDirectories -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdDirectories -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

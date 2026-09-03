@@ -7,7 +7,7 @@ Get list of apps marked as favorite.
 ## Syntax
 
 ~~~powershell
-Get-NMMUamAppsFavorite [-Connection <psobject>]
+Get-NMMUamAppsFavorite [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

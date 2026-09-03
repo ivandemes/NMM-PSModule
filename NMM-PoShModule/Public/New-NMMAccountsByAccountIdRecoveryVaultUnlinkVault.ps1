@@ -22,7 +22,8 @@ System.Management.Automation.PSObject
         [Parameter(Mandatory = $true)]
         [string] $VaultId,
 
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory = $true, ValueFromPipelineByPropertyName = $true)]
+        [Alias('Id')]
         [string] $AccountId,
 
         [Parameter()]

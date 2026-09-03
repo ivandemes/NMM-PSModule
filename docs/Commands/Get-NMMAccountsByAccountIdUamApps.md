@@ -7,7 +7,7 @@ Get applications available in certain account.
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdUamApps -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdUamApps -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

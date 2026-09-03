@@ -7,7 +7,7 @@ Get the list of managed resource groups
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdResourceGroup -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdResourceGroup -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

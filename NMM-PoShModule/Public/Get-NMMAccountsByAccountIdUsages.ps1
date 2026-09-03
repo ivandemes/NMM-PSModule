@@ -36,7 +36,8 @@ System.Management.Automation.PSObject
         [Parameter(Mandatory = $false)]
         [bool] $WithDetails,
 
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory = $true, ValueFromPipelineByPropertyName = $true)]
+        [Alias('Id')]
         [string] $AccountId,
 
         [Parameter()]

@@ -7,7 +7,7 @@ Get the list of managed resource groups
 ## Syntax
 
 ~~~powershell
-Get-NMMResourceGroup [-Connection <psobject>]
+Get-NMMResourceGroup [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

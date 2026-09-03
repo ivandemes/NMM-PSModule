@@ -7,7 +7,7 @@ Get all vaults
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdRecoveryVaultAllvaults -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdRecoveryVaultAllvaults -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

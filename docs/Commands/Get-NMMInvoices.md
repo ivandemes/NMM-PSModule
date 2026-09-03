@@ -7,7 +7,7 @@ Get the list of invoices.
 ## Syntax
 
 ~~~powershell
-Get-NMMInvoices [-PeriodStart <string>] [-PeriodEnd <string>] [-HidePaid <boolean>] [-HideUnpaid <boolean>] [-Connection <psobject>]
+Get-NMMInvoices [-PeriodStart <string>] [-PeriodEnd <string>] [-HidePaid <boolean>] [-HideUnpaid <boolean>] [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

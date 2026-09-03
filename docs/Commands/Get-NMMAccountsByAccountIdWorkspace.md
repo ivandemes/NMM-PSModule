@@ -7,7 +7,7 @@ Get the list of available workspaces
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdWorkspace -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdWorkspace -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

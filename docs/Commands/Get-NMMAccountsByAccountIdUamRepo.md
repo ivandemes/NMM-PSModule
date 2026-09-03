@@ -7,7 +7,7 @@ Get list of repos managed at Account level.
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdUamRepo -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdUamRepo -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

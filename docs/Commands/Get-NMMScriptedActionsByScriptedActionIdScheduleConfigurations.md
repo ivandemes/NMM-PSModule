@@ -7,7 +7,7 @@ Get Azure runbook msp scripted action schedule configurations.
 ## Syntax
 
 ~~~powershell
-Get-NMMScriptedActionsByScriptedActionIdScheduleConfigurations -ScriptedActionId <integer> [-Connection <psobject>]
+Get-NMMScriptedActionsByScriptedActionIdScheduleConfigurations -ScriptedActionId <integer> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

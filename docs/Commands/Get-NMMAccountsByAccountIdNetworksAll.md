@@ -7,7 +7,7 @@ Get the list of all available networks
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdNetworksAll -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdNetworksAll -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

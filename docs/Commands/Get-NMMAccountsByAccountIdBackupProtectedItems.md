@@ -7,7 +7,7 @@ Get all protected items
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdBackupProtectedItems -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdBackupProtectedItems -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

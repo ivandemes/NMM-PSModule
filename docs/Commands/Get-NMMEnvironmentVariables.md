@@ -7,7 +7,7 @@ Get a list of msp environment variables
 ## Syntax
 
 ~~~powershell
-Get-NMMEnvironmentVariables [-Connection <psobject>]
+Get-NMMEnvironmentVariables [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

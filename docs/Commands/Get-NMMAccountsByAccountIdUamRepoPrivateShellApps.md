@@ -7,7 +7,7 @@ List account Shell apps.
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdUamRepoPrivateShellApps -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdUamRepoPrivateShellApps -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

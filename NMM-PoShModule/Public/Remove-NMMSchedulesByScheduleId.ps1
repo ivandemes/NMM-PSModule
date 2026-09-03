@@ -18,7 +18,8 @@ System.Management.Automation.PSObject
 #>
     [CmdletBinding(SupportsShouldProcess = $true, ConfirmImpact = 'High')]
     param(
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory = $true, ValueFromPipelineByPropertyName = $true)]
+        [Alias('Id')]
         [int] $ScheduleId,
 
         [Parameter()]

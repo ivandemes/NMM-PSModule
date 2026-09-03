@@ -7,7 +7,7 @@ Get a list of account location variables
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdLocationVariables -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdLocationVariables -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

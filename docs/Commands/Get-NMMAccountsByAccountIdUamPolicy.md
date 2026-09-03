@@ -7,7 +7,7 @@ Get app deployment policies.
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdUamPolicy [-IncludeRecurrent <boolean>] [-IncludeOneTime <boolean>] -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdUamPolicy [-IncludeRecurrent <boolean>] [-IncludeOneTime <boolean>] -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

@@ -40,7 +40,8 @@ System.Management.Automation.PSObject
 #>
     [CmdletBinding(SupportsShouldProcess = $true)]
     param(
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory = $true, ValueFromPipelineByPropertyName = $true)]
+        [Alias('Id')]
         [int] $RepoId,
 
         [Parameter(Mandatory = $false, ValueFromPipeline = $true)]

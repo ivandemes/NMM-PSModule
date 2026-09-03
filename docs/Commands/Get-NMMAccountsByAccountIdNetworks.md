@@ -7,7 +7,7 @@ Get the list of managed networks
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdNetworks -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdNetworks -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

@@ -7,7 +7,7 @@ List the host pool tags
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameTags -SubscriptionId <string> -ResourceGroup <string> -PoolName <string> -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdHostPoolBySubscriptionIdByResourceGroupByPoolNameTags -SubscriptionId <string> -ResourceGroup <string> -PoolName <string> -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

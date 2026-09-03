@@ -7,7 +7,7 @@ Get the list of global schedule profiles
 ## Syntax
 
 ~~~powershell
-Get-NMMSchedules [-Connection <psobject>]
+Get-NMMSchedules [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

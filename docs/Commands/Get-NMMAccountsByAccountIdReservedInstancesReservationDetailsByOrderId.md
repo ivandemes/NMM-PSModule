@@ -7,7 +7,7 @@ Get reservations from Azure by order id
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdReservedInstancesReservationDetailsByOrderId -OrderId <string> -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdReservedInstancesReservationDetailsByOrderId -OrderId <string> -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

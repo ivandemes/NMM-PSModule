@@ -7,7 +7,7 @@ No additional description is provided by the API specification.
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdSecureScoresRecommendedActions -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdSecureScoresRecommendedActions -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

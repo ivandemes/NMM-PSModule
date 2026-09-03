@@ -7,7 +7,7 @@ Get a list of msp secure variables
 ## Syntax
 
 ~~~powershell
-Get-NMMSecureVariables [-Connection <psobject>]
+Get-NMMSecureVariables [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

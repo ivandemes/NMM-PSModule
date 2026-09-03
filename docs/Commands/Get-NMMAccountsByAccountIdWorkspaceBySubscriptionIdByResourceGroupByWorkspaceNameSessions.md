@@ -7,7 +7,7 @@ Get workspace user sessions
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdWorkspaceBySubscriptionIdByResourceGroupByWorkspaceNameSessions -SubscriptionId <string> -ResourceGroup <string> -WorkspaceName <string> -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdWorkspaceBySubscriptionIdByResourceGroupByWorkspaceNameSessions -SubscriptionId <string> -ResourceGroup <string> -WorkspaceName <string> -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

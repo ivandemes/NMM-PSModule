@@ -7,7 +7,7 @@ Get recommendations for purchasing reserved instances
 ## Syntax
 
 ~~~powershell
-Get-NMMAccountsByAccountIdReservedInstancesReservationRecommendations -AccountId <string> [-Connection <psobject>]
+Get-NMMAccountsByAccountIdReservedInstancesReservationRecommendations -AccountId <string> [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

@@ -7,7 +7,7 @@ Get the list of directories
 ## Syntax
 
 ~~~powershell
-Get-NMMDirectories [-Connection <psobject>]
+Get-NMMDirectories [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description

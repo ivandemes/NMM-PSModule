@@ -7,7 +7,7 @@ Get MSP app deployment policies.
 ## Syntax
 
 ~~~powershell
-Get-NMMUamPolicy [-IncludeRecurrent <boolean>] [-IncludeOneTime <boolean>] [-Connection <psobject>]
+Get-NMMUamPolicy [-IncludeRecurrent <boolean>] [-IncludeOneTime <boolean>] [-Filter <object>] [-Connection <psobject>]
 ~~~
 
 ## Description
