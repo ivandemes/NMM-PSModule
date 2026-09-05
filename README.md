@@ -5,7 +5,7 @@ PowerShell 7 module for the Nerdio Manager for MSP (NMM) REST API. The API comma
 ## Installation
 
 ```powershell
-Import-Module ./NMM-PSModule.psd1
+Import-Module ./NMM-PSModule/NMM-PSModule.psd1
 ```
 
 ## Authentication
@@ -128,10 +128,12 @@ Extensions include app detection and auto-import configuration.
 - [Get-NMMAccountsByAccountIdUsersMfaStatusByUserId](#get-nmmaccountsbyaccountidusersmfastatusbyuserid) — Get details of user MFA registration and per-user MFA state .
 - [Get-NMMAccountsByAccountIdWorkspace](#get-nmmaccountsbyaccountidworkspace) — Get the list of available workspaces
 - [Get-NMMAccountsByAccountIdWorkspaceBySubscriptionIdByResourceGroupByWorkspaceNameSessions](#get-nmmaccountsbyaccountidworkspacebysubscriptionidbyresourcegroupbyworkspacenamesessions) — Get workspace user sessions
+- [Get-NMMApiConnection](#get-nmmapiconnection) — Shows the current NMM API connection.
 - [Get-NMMAppRoleAssignments](#get-nmmapproleassignments) — Get the list of assigned principals.
 - [Get-NMMAppRoleAssignmentsRoles](#get-nmmapproleassignmentsroles) — Get the list of app roles.
 - [Get-NMMAutoscaleProfiles](#get-nmmautoscaleprofiles) — Get the list of global auto-scale profiles
 - [Get-NMMAutoscaleProfilesByProfileId](#get-nmmautoscaleprofilesbyprofileid) — Get the global auto-scale profile by id
+- [Get-NMMCommand](#get-nmmcommand) — Lists commands exported by NMM-PSModule.
 - [Get-NMMCostestimatorById](#get-nmmcostestimatorbyid) — Get the saved estimate by id
 - [Get-NMMCostestimatorList](#get-nmmcostestimatorlist) — Get the list of saved estimates
 - [Get-NMMDirectories](#get-nmmdirectories) — Get the list of directories
@@ -2238,6 +2240,28 @@ Get-NMMAccountsByAccountIdWorkspaceBySubscriptionIdByResourceGroupByWorkspaceNam
 
 [Detailed help and API notes](docs/Commands/Get-NMMAccountsByAccountIdWorkspaceBySubscriptionIdByResourceGroupByWorkspaceNameSessions.md)
 
+### Get-NMMApiConnection
+
+Shows the current NMM API connection.
+
+**Syntax:**
+
+```text
+
+Get-NMMApiConnection [<CommonParameters>]
+
+```
+
+**Required parameters:** None.
+
+**Optional parameters:** None.
+
+```powershell
+Get-NMMApiConnection
+```
+
+[Detailed help and API notes](docs/Commands/Get-NMMApiConnection.md)
+
 ### Get-NMMAppRoleAssignments
 
 Get the list of assigned principals.
@@ -2333,6 +2357,28 @@ Get-NMMAutoscaleProfilesByProfileId -ProfileId '<ProfileId>' -Connection $connec
 ```
 
 [Detailed help and API notes](docs/Commands/Get-NMMAutoscaleProfilesByProfileId.md)
+
+### Get-NMMCommand
+
+Lists commands exported by NMM-PSModule.
+
+**Syntax:**
+
+```text
+
+Get-NMMCommand [[-Name] <string>] [-Verb <string>] [-ApiPath <string>] [-Category <string>] [-AsObject] [<CommonParameters>]
+
+```
+
+**Required parameters:** None.
+
+**Optional parameters:** `-ApiPath <String>`, `-AsObject <switch>`, `-Category <String>`, `-Name <String>`, `-Verb <String>`.
+
+```powershell
+Get-NMMCommand
+```
+
+[Detailed help and API notes](docs/Commands/Get-NMMCommand.md)
 
 ### Get-NMMCostestimatorById
 

@@ -1,6 +1,6 @@
 @{
     RootModule = 'NMM-PSModule.psm1'
-    ModuleVersion = '1.0.0'
+    ModuleVersion = '0.1.0'
     GUID = '5105823c-41ab-46f9-a41b-1b2fd1b86d78'
     Author = 'NMM-PSModule contributors'
     CompanyName = 'Community'
